@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.RegisterFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rectangle3"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here’s your\nfirst step\nwith us!"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/people2"
+            tools:ignore="MissingConstraints">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="27dp"
+            android:hint="Fullname"
+            tools:ignore="MissingConstraints">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginRight="27dp"
+            android:hint="Email"
+            tools:ignore="MissingConstraints">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginRight="27dp"
+            android:hint="Password"
+            tools:ignore="MissingConstraints">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginRight="27dp"
+            android:hint="Phone Number"
+            tools:ignore="MissingConstraints">
+
+        </EditText>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="510dp"
+            android:text="Terms and condition">
+
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="560dp"
+            android:text="Already have an account?"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="560dp"
+            android:text="Sign In"
+            android:textColor="#6658F5">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#6658F5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

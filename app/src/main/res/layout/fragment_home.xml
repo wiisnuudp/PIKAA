@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btn1"
+                android:layout_width="412dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="nested scrollview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn1">
+
+            </TextView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        app:strokeWidth="1dp"
+                        app:strokeColor="#6658F5"
+                        android:id="@+id/card1"
+                        android:layout_width="130dp"
+                        android:layout_height="140dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/beasiswa"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Technologi"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        app:strokeWidth="1dp"
+                        app:strokeColor="#6658F5"
+                        android:id="@+id/card2"
+                        android:layout_width="130dp"
+                        android:layout_height="140dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:layout_constraintStart_toEndOf="@id/card1"
+                        app:layout_constraintTop_toTopOf="@id/card1"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:background="@drawable/beasiswa"
+                                app:layout_constraintStart_toEndOf="@id/card1"
+                                app:layout_constraintTop_toTopOf="@id/card1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Technologi"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        app:strokeWidth="1dp"
+                        app:strokeColor="#6658F5"
+                        android:id="@+id/card3"
+                        android:layout_width="130dp"
+                        android:layout_height="140dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:layout_constraintStart_toEndOf="@id/card2"
+                        app:layout_constraintTop_toTopOf="@id/card2"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/imageButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:background="@drawable/beasiswa"
+                                app:layout_constraintStart_toEndOf="@id/card1"
+                                app:layout_constraintTop_toTopOf="@id/card1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Technologi"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
